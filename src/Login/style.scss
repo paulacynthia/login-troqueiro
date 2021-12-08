@@ -1,0 +1,146 @@
+:root {
+  --background-blue: #2e3480;
+
+  --button-red: #ea4335;
+  --button-green: #68bf7e;
+
+  --text-color: #fff;
+  --text-color-two: #808080;
+
+  --separator: #a8a8b3;
+
+  --border-color: #c4c4c4;
+}
+
+#login {
+  display: flex;
+  align-items: stretch;
+  height: 100vh;
+
+  aside {
+    flex: 8;
+
+    background-color: var(--background-blue);
+    color: var(--text-color);
+
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+
+    img {
+      width: 290px;
+    }
+
+    .images {
+      margin: 0 auto;
+    }
+
+    p {
+      margin-top: 55px;
+      color: var(--text-color);
+      text-align: center;
+
+      font: 300 16px "Poppins", sans-serif;
+    }
+  }
+
+  main {
+    flex: 7;
+
+    padding: 0 32px;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+
+  .main-content {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    max-width: 320px;
+    align-items: stretch;
+    text-align: center;
+  }
+
+  .buttons {
+    margin-top: 34px;
+    height: 50px;
+    border-radius: 8px;
+    font-weight: 500;
+    color: var(--text-color);
+
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+
+    cursor: pointer;
+
+    &:hover {
+      filter: brightness(0.9);
+    }
+  }
+
+  #btn-email {
+    border: 1px solid var(--border-color);
+    color: var(--text-color-two);
+  }
+
+  #btn-google {
+    background: var(--button-red);
+    border: none;
+  }
+
+  #btn-phone {
+    background: var(--button-green);
+    border: none;
+  }
+
+  .text-button {
+    margin: 0 auto;
+    padding: 1px;
+  }
+
+  img.images-button {
+    margin-right: 8px;
+    max-width: 20px;
+  }
+
+  .separator {
+    font-size: 14px;
+    color: var(--separator);
+
+    margin: 32px 0;
+    display: flex;
+    align-items: center;
+
+    &::before {
+      content: "";
+      flex: 1;
+      height: 1px;
+      background: var(--separator);
+      margin-right: 16px;
+    }
+
+    &::after {
+      content: "";
+      flex: 1;
+      height: 1px;
+      background: var(--separator);
+      margin-left: 16px;
+    }
+  }
+
+  .logos-socialMedia {
+    padding: 10px 15px;
+    margin-left: 24px;
+    border: 1px solid var(--border-color);
+    border-radius: 5px;
+
+    cursor: pointer;
+
+    &:hover {
+      filter: brightness(0.9);
+    }
+  }
+}

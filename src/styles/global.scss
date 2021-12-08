@@ -1,0 +1,18 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+:root {
+  --background: #f8f8f8;
+}
+
+body {
+  background: var(--background);
+}
+
+body,
+button {
+  font: 400 16px "Roboto", sans-serif;
+}
